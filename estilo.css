@@ -1,0 +1,1059 @@
+@font-face {
+  font-family: "Frauces";
+  src: url(fonts/frauces.ttf);
+}
+@font-face {
+  font-family: "Ephesis";
+  src: url(fonts/Ephesis-Regular.ttf);
+}
+@font-face {
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.logo {
+  /*logo de Dolce Vita*/
+  font-family: "Ephesis";
+  font-size: 1.9em;
+}
+.conteiner--flex {
+  /* controla el logo y el menu separacion y centrado*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header {
+  padding: 10px;
+}
+.main-title {
+  color: #ffffff;
+}
+.color-span {
+  color: #e99988;
+}
+/* Menu de navegacion*/
+.icon-menu {
+  font-size: 1.9em;
+  color: #e99988;
+  border: 2px solid #ffffff;
+  padding: 5px 10px;
+  display: block;
+  border-radius: 30%;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.menu {
+  position: absolute;
+  top: 135px;
+  left: 0;
+  background: linear-gradient(70deg, #f73f3f, #e99988);
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+  border-radius: 0rem 0rem 1rem 1rem;
+  margin: 0;
+  z-index: 999;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.menu__item {
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+}
+
+.menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+.menu__link:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+.menu__link:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.menu__link span:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-left: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.menu__link span:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.menu__link span {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+/* efecto hover del before,after y span de ambos cuadrado de seleccion */
+
+.menu__link--select:before,
+.menu__link--select:after,
+.menu__link--select span:before,
+.menu__link--select span:after {
+  opacity: 1;
+}
+
+.menu__item:hover .menu__link:before,
+.menu__item:hover .menu__link:after,
+.menu__item:hover .menu__link span:before,
+.menu__item:hover .menu__link span:after {
+  opacity: 1;
+}
+/*estilos nav social*/
+.nav-social {
+  display: flex;
+  justify-content: center;
+}
+.nav-social__item {
+  width: 35px;
+  height: 35px;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 5px;
+}
+.nav-social__item:first-child {
+  background: #3b5998;
+}
+.nav-social__item:nth-child(2) {
+  background: #eb984e;
+}
+.nav-social__item:nth-child(3) {
+  background: #28b463;
+}
+.nav-social__item i {
+  color: #ffffff;
+}
+.mostrar {
+  top: 135px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* fondo de menu mi banner*/
+.banner {
+  background: url("imagenes/torta.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -999;
+}
+.banner:before {
+  content: "";
+  width: 100%;
+  min-height: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner__content {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
+  font-size: 1.3;
+  background-color: ;
+}
+
+.slider-testimonial {
+  margin: auto;
+  background-color: ;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.banner__content .slider-testimonial:first-child {
+  opacity: 1;
+}
+.slider-testimonial :target {
+  opacity: 1;
+}
+.botones-slider {
+  position: relative;
+  top: 230px;
+  text-align: center;
+  background-color: ;
+  width: 100%;
+}
+.botones-slider li {
+  display: inline-block;
+  text-align: center;
+}
+.botones-slider li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #d21e64;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  font-size: 10px;
+  border-radius: 100%;
+}
+
+.main {
+  margin-top: 250px;
+  padding: 15px;
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.welcome__imagen {
+  padding: 0 20px;
+}
+.welcome__imagen img {
+  width: 280px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.welcome__info {
+  padding: 20px;
+}
+.section__title {
+  font-size: 2em;
+  font-family: "Ephesis";
+  position: relative;
+  text-align: center;
+}
+.section__title:before {
+  content: "";
+  width: 200px;
+  position: absolute;
+  height: 3px;
+  background: #e99988;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section__title:after {
+  content: "";
+  width: 200px;
+  position: absolute;
+  height: 3px;
+  background: #e99988;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.welcome__txt {
+  margin: 50px;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: "Frauces";
+  font-style: italic;
+}
+.welcome__boton {
+  display: block;
+  border: 2px solid #e99988;
+  border-radius: 50%;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #e99988;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: all 0.3 ease;
+}
+.welcome__boton:hover {
+  background: #e99988;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+
+/*estilos personalizados de las ventanas de modal*/
+
+.modal-fondo-especial {
+  background: url(imagenes/cerezo.jpg);
+  background-size: cover;
+  position: relative;
+}
+.modal-fondo-especial:before {
+  content: "";
+  width: 100%;
+  height: 427px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cambio-letra {
+  font-family: "Ephesis";
+  font-size: 1.5em;
+  color: rgb(229, 147, 147);
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-modal {
+  font-size: 16.5px;
+  font-weight: 400;
+  color: rgb(240, 234, 234);
+  -webkit-text-stroke: ;
+  position: relative;
+  font-style: italic;
+}
+
+/*fin de estilos personalizados de las ventanas modal*/
+
+.conteiner-galeria {
+}
+.galeria__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galeria__item:before {
+  /* sombra de imagenes de galeria*/
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.galeria__title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+.galeria__title:before {
+  content: "";
+  width: 300px;
+  position: absolute;
+  height: 3px;
+  background: #e99988;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.galeria__title:after {
+  content: "";
+  width: 300px;
+  position: absolute;
+  height: 3px;
+  background: #e99988;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.galeria__item img {
+  width: 100%;
+}
+
+/*botones de modal de la galeria */
+
+.galeria__item a {
+  position: absolute;
+  bottom: 20px;
+}
+
+/*fin de los botones de modal de las galerias*/
+.container {
+  width: 100%;
+  min-height: 100vh;
+  /*background-image: linear-gradient(-45deg, #e3ddd9 50%, #f78a69 50%);*/
+  font-family: "Raleway", sans-serif;
+}
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 40px;
+  color: rgb(17, 17, 17);
+}
+
+.subtitulo {
+  margin: 0;
+  color: #000;
+  display: inline;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sabor {
+  color: #fff;
+  margin: 7px 0;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+  font-family: "Dancing Script", cursive;
+  margin-top: 0;
+}
+
+.linea-division {
+  width: 80%;
+  height: 2px;
+  background-color: #36221c;
+}
+.carousel {
+  min-height: 500px;
+}
+.carousel .carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  width: 500px;
+  height: 500px;
+}
+.carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+/* sabores de cada producto conteiner elaboraciones*/
+
+/*estilos */
+.cards-body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(70deg, #000, #999);
+  overflow: ; /*sin overflow hidden paat que als tarjetas al agrandarce salgan y se vean bien*/
+}
+.card {
+  display: inline-grid;
+  margin: 3px;
+  grid-template-columns: 200px 200px 115px;
+  grid-template-rows: 210px;
+  grid-template-areas: "image" "text" "stats";
+
+  font-family: roboto;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.card-image {
+  grid-area: image;
+  background: url("imagenes/mesadulce.jpg");
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.card-text {
+  margin: 5px;
+}
+.card-text .date {
+  color: rgba(255, 7, 110);
+  font-size: 13px;
+}
+.card-text p {
+  font-size: 12px;
+}
+.card-text h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: rosybrown;
+}
+.card-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+}
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /*me deja que los detalles como visitas comentarios esten en columna*/
+  padding: 10px;
+  color: #ffffff;
+}
+.card-stats .tipos {
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card-stats .value {
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card-stats .border {
+  border-top: 1px solid rgb(230, 121, 121);
+  border-bottom: 1px solid rgb(199, 118, 118);
+}
+.card-stats .value sup {
+  font-size: 9px;
+  font-weight: 500;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+/*celiacos tarjeta*/
+.card-image.Cl {
+  background: url("imagenes/CELIACOS.jpg");
+  background-size: cover;
+}
+.card-text.Cl h2 {
+  color: rgb(255, 77, 7);
+}
+.card-text.Cl .date {
+  color: rgb(255, 77, 7);
+}
+.card-stats.Cl .border {
+  border-top: 1px solid rgb(185, 67, 20);
+  border-bottom: 1px solid rgb(185, 67, 20);
+}
+.card-stats.Cl {
+  background: rgb(255, 77, 7);
+}
+.card-image.Ds {
+  background: url("imagenes/desayunos.jpg");
+  background-size: cover;
+}
+.card-text.Ds h2 {
+  color: rgb(0, 189, 63);
+}
+.card-text.Ds .date {
+  color: rgb(0, 189, 63);
+}
+.card-stats.Ds .border {
+  border-top: 1px solid rgb(14, 122, 50);
+  border-bottom: 1px solid rgb(14, 122, 50);
+}
+.card-stats.Ds {
+  background: rgb(0, 189, 63);
+}
+
+/*paso de marcas -slider*/
+.body-slider {
+  align-items: center;
+  background-image: url("imagenes/boquillas.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 50px;
+  width: 250px;
+}
+
+.slide img {
+}
+/*fin de slider revisar codigo*/
+
+/* Pie de pagina efecto de olas*/
+footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Iconos y enlaces de pie de pagina*/
+footer .footer-icon,
+footer .footer-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .footer-icon li,
+footer .footer-menu li {
+  list-style: none;
+}
+footer .footer-icon li a {
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+/* efecto de movimiento iconos de pie de pagina*/
+footer .footer-icon li a:hover {
+  transform: translateY(-10px);
+}
+footer .footer-menu li a {
+  font-size: 1.1em;
+  color: #ffffff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .footer-menu li a:hover {
+  opacity: 1;
+}
+footer p {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+/* efecto de olas imagen waver(olas)*/
+footer .footer-ola {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(imagenes/wave.png);
+  background-size: 1000px 100px;
+}
+footer .footer-ola#ola1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatefooter-ola 4s linear infinite;
+}
+footer .footer-ola#ola2 {
+  z-index: 1000;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animatefooter-ola_02 4s linear infinite;
+}
+footer .footer-ola#ola3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animatefooter-ola 3s linear infinite;
+}
+footer .footer-ola#ola4 {
+  z-index: 1000;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animatefooter-ola_02 3s linear infinite;
+}
+@keyframes animatefooter-ola {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+@keyframes animatefooter-ola_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    display: flex;
+    background: none;
+    font-size: 0.8em;
+  }
+  .menu__item {
+    width: auto;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+  .banner {
+    min-height: 500px;
+    object-fit: ;
+    background-repeat: ;
+  }
+  .banner:before {
+    min-height: 500px;
+  }
+  .main {
+    margin-top: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner {
+  }
+
+  .menu {
+  }
+  .menu__item {
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+  }
+  .menu__link {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+  }
+  .main {
+    background: ;
+    margin-top: 300px;
+  }
+  .welcome {
+    width: 80%;
+    background: ;
+    margin: 1rem 8rem;
+    padding: 1rem;
+  }
+  .conteiner-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 1rem 8rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .galeria__item {
+    width: 50%;
+    background: #fff;
+    border: 3px solid red;
+  }
+  .galeria__img {
+    width: 405px;
+    height: 300px;
+  }
+  .galeria__title {
+    font-size: 1.5rem;
+  }
+  .conteiner-body_trabajos {
+    display: flex;
+
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    /*background-image: linear-gradient(-45deg, #e3ddd9 50%, #f78a69 50%);*/
+    font-family: "Raleway", sans-serif;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 40px;
+    color: rgb(17, 17, 17);
+  }
+
+  .subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .sabor {
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    font-family: "Dancing Script", cursive;
+    margin-top: 0;
+  }
+
+  .linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+  }
+  .carousel {
+    min-height: 500px;
+  }
+  .carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px;
+  }
+  .carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+  }
+  /*seccion de trabajos tarjetas*/
+  .cards-body {
+    margin: 20px 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(70deg, rgb(247, 247, 247), rgb(223, 158, 158));
+    overflow: hidden;
+  }
+  .card {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  /*partes de las cartas*/
+  .card-image {
+    grid-area: image;
+    background: url("imagenes/mesadulce.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+  .card-text {
+    grid-area: text;
+    margin: 25px;
+  }
+  .card-text .date {
+    color: rgba(255, 7, 110);
+    font-size: 13px;
+  }
+  .card-text p {
+    color: rosybrown;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .card-text h2 {
+    margin-top: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 0 0 15px 15px;
+    background: rgb(255, 7, 110);
+  }
+  .card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #ffffff;
+  }
+  .card-stats .tipos {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .card-stats .value {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .card-stats .border {
+    border: 1px solid rgb(199, 118, 118);
+  }
+  .card-stats .value sup {
+    font-size: 12px;
+  }
+  .card:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  }
+  /*celiacos tarjeta*/
+  .card-image.Cl {
+    background: url("imagenes/CELIACOS.jpg");
+    background-size: cover;
+  }
+  .card-text.Cl .date {
+    color: rgb(255, 77, 7);
+  }
+  .card-stats.Cl .border {
+    border: 1px solid rgb(223, 80, 23);
+  }
+  .card-stats.Cl {
+    background: rgb(255, 77, 7);
+  }
+  .card-image.Ds {
+    background: url("imagenes/desayunos.jpg");
+    background-size: cover;
+  }
+  .card-text.Ds .date {
+    color: rgb(0, 189, 63);
+  }
+  .card-stats.Ds .border {
+    border: 1px solid rgb(45, 173, 88);
+  }
+  .card-stats.Ds {
+    background: rgb(0, 189, 63);
+  }
+  /*fin de partes de la carta*/
+
+  /* columnas*/
+}
