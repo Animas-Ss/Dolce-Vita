@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" >
+	<meta name="viewport" content="width-divice-width, initial-scale-1.0">
+	<meta charset="utf-8">
+	<title>Dolce Vita</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+
+ <header class="main-heder" id="Inicio">
+  <div class="conteiner conteiner--flex">
+   <div class="logo"><h1 class="main-title"><span class="color-span">Dolce</span>Vita</h1></div>
+
+   <div class="main-nav">
+      <span class="icon-menu" id="btn-menu"><i class="fas fa-birthday-cake"></i></span>
+      <ul class="menu" id="menu">
+
+        <li class="menu__item"><a href="#Inicio" class="menu__link menu__link--select"><span>Inicio</span></a></li>
+        <li class="menu__item"><a href="#Contacto" class="menu__link"><span>Contacto</span></a></li>
+        <li class="menu__item"><a href="#Nosotros" class="menu__link"><span>Nosotros</span></a></li>
+        <li class="menu__item"><a href="#Productos" class="menu__link"><span>Productos</span></a></li>
+        <li class="menu__item"><a href="#Galeria" class="menu__link"><span>Galeria</span></a></li>
+      </ul>
+
+   </div>
+</div>
+</header>
+<div class="banner">
+   <div class="banner__content">
+      <div class="slider-testimonial">
+
+          <div class="testimonial-item" id="slide1">
+           <h2 class="banner__title">DUL<span class="color-span">ZURA</span></h2>
+           <p class="banner__txt">Elaboraciones Artesanales y personalizadas, haz de tus eventos algo unico e inigualable, contactanos y hace tus sueños realidad.</p>
+          </div>
+
+          <div class="testimonial-item" id="slide2">
+            <h2 class="banner__title">SAB<span class="color-span">ORES</span></h2>
+            <p class="banner__txt">Elaboraciones Artesanales y personalizadas, haz de tus eventos algo unico e inigualable, contactanos y hace tus sueños realidad.</p>
+           </div>
+
+           <div class="testimonial-item" id="slide3">
+            <h2 class="banner__title">DETA<span class="color-span">LLES</span></h2>
+            <p class="banner__txt">Elaboraciones Artesanales y personalizadas, haz de tus eventos algo unico e inigualable, contactanos y hace tus sueños realidad.</p>
+           </div>
+
+           <div class="testimonial-item" id="slide4">
+            <h2 class="banner__title">DULZURA</h2>
+            <p class="banner__txt">Elaboraciones Artesanales y personalizadas, haz de tus eventos algo unico e inigualable, contactanos y hace tus sueños realidad.</p>
+           </div>
+   
+      </div>
+   </div>
+</div>
+<ul class="botones-slider">
+   <li>
+      <a  class="pulse" href="#slide1">1</a>
+   </li>
+   <li>
+      <a class="pulse" href="#slide2">2</a>
+   </li>
+   <li>
+      <a  class="pulse" href="#slide3">3</a>
+   </li>
+   <li>
+      <a class="pulse" href="#slide4">4</a>
+   </li>
+</ul>
+
+ 
+
+<main class="main">
+   <section class="welcome" id="Nosotros">
+     <div class="welcome__imagen"><img src="imagenes/nop.jpg"></div>
+     <div class="welcome__info">
+       <h2 class="section__title"><span class="color-span">Noelia</span>Mansilla</h2>
+       <p class="welcome__txt">Dolce Vita , es un sueño hecho realidad , años de experiencia en la pasteleria me guiaron hacia este sueño, el cual lo emprendo siempre con la mayor emocion</p>
+       <a class="welcome__boton waves-effect waves-light  modal-trigger" href="#modal1">Saber mas</a>
+       
+
+       <div id="modal1" class="modal">
+         <div class="modal-content modal-fondo-especial">
+           <h4 class="titulo">Dolce Vita</h4>
+           <h5 class="tituto">Mi Sueño</h5>
+           <p class="text-modal">Mi nombre es Noelia Mansilla , llevo en el rubro gastronomico 20 años ,me dedique a la pasteleria por que
+             ya hace 15 años, tengo como objetivo poder vivir haciendo de mis productos algo unico para toda clace de eventos
+             cumpleaños, bautismos, fiestas de 15 años, despedidas, etc. Me motiva dia a dia crecer mas ,aprendiendo nuevas habilidades
+             y me emociona que ustedes formen parte de mi crecimiento dandome la oportunidad contando con mis productos para sus eventos
+             y de esta manera poder hacer que mucha gente me conosca , mis elavoraciones son 100% artesanales y personbalizadas, 
+             Les agradezco por su cuota de confianza y como dijo mi amado <span class="cambio-letra"> Nono, "piano , piano filia se arriva lontano",</span> siempre sueñen 
+             que mientras aya sueños la vida siempre se va abrir paso para crecer.
+
+           </p>
+         </div>
+         <div class="modal-footer">
+           <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+         </div>
+       </div>
+
+    </div>
+ </section>
+ <section class="conteiner-galeria" id="Galeria">
+ <div class="galeria__item">
+    <h3 class="galeria__title">POSTRES ARTESANALES</h3>
+    <img src="imagenes/postres.jpg" alt="" class="galeria__img">
+    <!-- botones para poner proyecciones de productos-->
+
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Sabores</a>
+
+    <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+    <!-- final de los botones para poner proyecciones de los productos-->
+
+ </div> 
+ <div class="galeria__item">
+    <h3 class="galeria__title">TRIFLES VARIADOS</h3>
+    <img src="imagenes/vasos.jpg" alt="" class="galeria__img">
+    <!-- botones para poner proyecciones de productos-->
+    
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Sabores</a>
+
+    <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Modal Heade3</h4>
+      <p>A bunch of tex3</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+    <!-- final de los botones para poner proyecciones de los productos-->
+
+
+ </div>
+ <div class="galeria__item">
+    <h3 class="galeria__title">ELAVORACIONES VEGANAS</h3>
+    <img src="imagenes/vegana.jpg" alt="" class="galeria__img">
+    <!-- botones para poner proyecciones de productos-->
+    
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal4">Sabores</a>
+
+    <div id="modal4" class="modal">
+    <div class="modal-content">
+      <h4>Modal Heade4</h4>
+      <p>A bunch of tex4</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+    <!-- final de los botones para poner proyecciones de los productos-->
+
+ </div>
+ <div class="galeria__item">
+    <h3 class="galeria__title">DECORACIONES PERSONALIZADAS</h3>
+    <img src="imagenes/tortas-decorada.jpg" alt="" class="galeria__img">
+    <!-- botones para poner proyecciones de productos-->
+    
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal5">Sabores</a>
+
+    <div id="modal5" class="modal">
+    <div class="modal-content">
+      <h4>Modal Heade5</h4>
+      <p>A bunch of tex5</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+    <!-- final de los botones para poner proyecciones de los productos-->
+
+ </div>
+ <div class="galeria__item">
+    <h3 class="galeria__title">TARTAS DE TODOS LOS SABORES</h3>
+    <img src="imagenes/tartas.jpg" alt="" class="galeria__img">
+    <!-- botones para poner proyecciones de productos-->
+    
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal6">Sabores</a>
+
+    <div id="modal6" class="modal">
+    <div class="modal-content">
+      <h4>Modal Heade6</h4>
+      <p>A bunch of tex6</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+    <!-- final de los botones para poner proyecciones de los productos-->
+
+ </div>
+ <div class="galeria__item">
+   <h3 class="galeria__title">TRIFLES DE TODOS LOS SABORES</h3>
+   <img src="imagenes/vasos.jpg" alt="" class="galeria__img">
+   <!-- botones para poner proyecciones de productos-->
+    
+   <a class="waves-effect waves-light btn modal-trigger" href="#modal7">Gustos</a>
+
+   <div id="modal7" class="modal">
+   <div class="modal-content">
+     <h4>Modal Header7</h4>
+     <p>A bunch of text7</p>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+   </div>
+ </div>
+   <!-- final de los botones para poner proyecciones de los productos-->
+
+</div>
+</section>
+<section class="container">
+<div class="row">
+   <div class="col s12">
+      <h1 class="center-aling titulo">Que se te antoja hoy</h1>
+
+      <div class="carousel center-aling">
+
+         <div class="carousel-item">
+            <h2 class="subtitulo">Donas</h2>
+            <div class="linea-division"></div>
+            <p class="sabor">Glaseadas</p>
+            <img src="imagenes/dona-01.jpg" alt="">
+         </div>
+         <div class="carousel-item">
+            <h2 class="subtitulo">Pastel</h2>
+            <div class="linea-division"></div>
+            <p class="sabor">Chocolate</p>
+            <img src="imagenes/pastel-01.jpg" alt="">
+         </div>
+         <div class="carousel-item">
+            <h2 class="subtitulo">Pastel</h2>
+            <div class="linea-division"></div>
+            <p class="sabor">Chocolate</p>
+            <img src="imagenes/pastel-02.jpg" alt="">
+         </div>
+         <div class="carousel-item">
+            <h2 class="subtitulo">Pastel</h2>
+            <div class="linea-division"></div>
+            <p class="sabor">Chocolate</p>
+            <img src="imagenes/muffins-01.jpg" alt="">
+         </div>
+         <div class="carousel-item">
+            <h2 class="subtitulo">Pastel</h2>
+            <div class="linea-division"></div>
+            <p class="sabor">Chocolate</p>
+            <img src="imagenes/muffins-02.jpg" alt="">
+         </div>
+         <div class="carousel-item">
+            <h2 class="subtitulo">Pastel</h2>
+            <div class="linea-division"></div>
+            <p class="sabor">Chocolate</p>
+            <img src="imagenes/muffins-03.jpg" alt="">
+         </div>
+
+         
+      </div>
+   </div>
+
+</div>
+
+
+</section>
+<section class="cards-body" id="Productos">
+   <div class="card">
+   <div class="card-image Ms"></div>
+   <div class="card-text Ms">
+      <h2>Mesa Dulce</h2>
+      <span class="date">Variedades</span>
+      <p>Las expresiones españolas mesa de dulces o mesa dulce son alternativas válidas y preferibles al anglicismo candy bar, empleado para referirse a las mesas personalizadas y decoradas en las que se ofrecen todo tipo de golosinas, caramelos y dulces</p>
+   </div>
+   <div class="card-stats Ms">
+      <div class="stat">
+         <div class="value">surtidos</div>
+         <div class="tipos">lolipost</div>
+      </div>
+      <div class="stat border">
+         <div class="value">Trifles</div>
+         <div class="tipos">variados</div>
+      </div>
+      <div class="stat">
+         <div class="value">Mini</div>
+         <div class="tipos">tartas</div>
+      </div>
+   </div>
+   </div>
+   <div class="card">
+      <div class="card-image Cl"></div>
+      <div class="card-text Cl">
+         <h2>Celiacos</h2>
+         <span class="date">Variedades</span>
+         <p>preparaciones sin gluten: masas quebradas, método cremado y arenado; masas batidas livianas; masas batidas pesadas; postres típicos; cremas, ganaches y merengue italiano.pastelería 100% libres de gluten y aptas para celíacos</p>
+      </div>
+      <div class="card-stats Cl">
+         <div class="stat">
+            <div class="value">Flan</div>
+            <div class="tipos">Cheesecake</div>
+         </div>
+         <div class="stat border">
+            <div class="value">Pavlovas</div>
+            <div class="tipos">Brownies</div>
+         </div>
+         <div class="stat">
+            <div class="value">Minicakes</div>
+            <div class="tipos">Trufas</div>
+         </div>
+      </div>
+      </div>
+      <div class="card">
+         <div class="card-image Ds"></div>
+         <div class="card-text Ds">
+            <h2>Desayunos</h2>
+            <span class="date">Variedades</span>
+            <p>Desayunos y meriendas con excelente presentación, productos frescos y de calidad. Desayunos y meriendas sorpresa con envío a domicilio. Entregas en tiempo y forma.</p>
+         </div>
+         <div class="card-stats Ds">
+            <div class="stat">
+               <div class="value">tazas</div>
+               <div class="tipos">tartas</div>
+            </div>
+            <div class="stat border">
+               <div class="value">galletas</div>
+               <div class="tipos">tostadas</div>
+            </div>
+            <div class="stat">
+               <div class="value">bombones</div>
+               <div class="tipos">mermeladas</div>
+            </div>
+         </div>
+         </div>
+
+</section>
+<section class="body-slider">
+   <h4 class="slider-titulo titulo">Algunos Marcas que utilizo para mis elavoraciones</h4>
+   <div class="slider">
+      <div class="slide-track">
+
+         <div class="slide">
+            <img src="imagenes/mapsa.png" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/richs.png" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/Vacalin.jpg" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/mapricuber.jpg" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/Milkaut.png" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/arcor.png" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/mapsa.png" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/richs.png" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/Vacalin.jpg" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/mapricuber.jpg" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/Milkaut.png" height="100" width="250" alt="">
+         </div>
+         <div class="slide">
+            <img src="imagenes/arcor.png" height="100" width="250" alt="">
+         </div>
+        
+      </div>
+   </div>
+</section>
+</main>
+<footer class="conteiner-footer" id="Contacto">
+   <div class="footer-olas">
+   <div class="footer-ola" id="ola1"></div>
+   <div class="footer-ola" id="ola2"></div>
+   <div class="footer-ola" id="ola3"></div>
+   <div class="footer-ola" id="ola4"></div>
+   </div>
+   <ul class="footer-icon">
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+   </ul>
+   <ul class="footer-menu">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+   </ul>
+   <p>Pagina creada por Sosa , Sebastian | Derechos Reservados </p>
+</footer> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>   
+<script src="js/menu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
